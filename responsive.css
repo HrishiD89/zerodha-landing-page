@@ -1,0 +1,121 @@
+/* Responsive Styles */
+
+/* For tablets and smaller desktops */
+@media screen and (max-width: 1024px) {
+    .container {
+      width: 90%;
+    }
+  
+    .ecosystem-container,
+    .pricing-container,
+    .education-container {
+      flex-direction: column;
+    }
+  
+    .left-side,
+    .right-side,
+    .pricing-detail,
+    .pricing-image,
+    .varsity-img,
+    .education-content {
+      flex-basis: 100%;
+      width: 100%;
+    }
+  
+    .ecosystem img,
+    .varsity-img img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* For mobile devices */
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-text p {
+      font-size: 16px;
+    }
+  
+    .button a {
+      font-size: 16px;
+      padding: 8px 20px;
+    }
+  
+    .left-side h2,
+    .pricing-detail h2,
+    .education-container h3,
+    #mini-container div h1 {
+      font-size: 1.5rem;
+    }
+  
+    .features-list h3 {
+      font-size: 1.1rem;
+    }
+  
+    .pricing-image {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .price-img {
+      margin-bottom: 30px;
+    }
+  
+    .price-img span {
+      left: 0;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  
+  /* For very small mobile devices */
+  @media screen and (max-width: 480px) {
+    .hero-img img {
+      width: 100%;
+    }
+  
+    .extra-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .extra-links a {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  }
